@@ -18,10 +18,10 @@ try {
             $sql = "INSERT INTO category (name, last_update) VALUES (:name, NOW())";
             $stmt = $conn->prepare($sql);
             $stmt->execute(["name" => $name]);
-            echo "<p>Categoría agregada correctamente.</p>";
+            echo "Categoría agregada correctamente.";
         }
         else {
-            echo "<p>Debe ingresar un nombre válido.</p>";
+            echo "Debe ingresar un nombre válido.";
         }
     }
 
